@@ -14,130 +14,130 @@ layout:
 
 # Типы данных
 
- content-ref url="buttoncomponent.md" 
+content-ref url="buttoncomponent.md"
 [buttoncomponent.md](buttoncomponent.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="channel.md" 
+content-ref url="channel.md"
 [channel.md](channel.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="command.md" 
+content-ref url="command.md"
 [command.md](command.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="commandoption.md" 
+content-ref url="commandoption.md"
 [commandoption.md](commandoption.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="component.md" 
+content-ref url="component.md"
 [component.md](component.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="createchanneloptions.md" 
+content-ref url="createchanneloptions.md"
 [createchanneloptions.md](createchanneloptions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="createthreadoptions.md" 
+content-ref url="createthreadoptions.md"
 [createthreadoptions.md](createthreadoptions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="currency.md" 
+content-ref url="currency.md"
 [currency.md](currency.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="deferreplyoptions.md" 
+content-ref url="deferreplyoptions.md"
 [deferreplyoptions.md](deferreplyoptions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="emoji.md" 
+content-ref url="emoji.md"
 [emoji.md](emoji.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="guild.md" 
+content-ref url="guild.md"
 [guild.md](guild.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="interaction.md" 
+content-ref url="interaction.md"
 [interaction.md](interaction.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="interactionfield.md" 
+content-ref url="interactionfield.md"
 [interactionfield.md](interactionfield.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="member.md" 
+content-ref url="member.md"
 [member.md](member.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="message.md" 
+content-ref url="message.md"
 [message.md](message.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messageembed.md" 
+content-ref url="messageembed.md"
 [messageembed.md](messageembed.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messageembedauthor.md" 
+content-ref url="messageembedauthor.md"
 [messageembedauthor.md](messageembedauthor.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messageembedfield.md" 
+content-ref url="messageembedfield.md"
 [messageembedfield.md](messageembedfield.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messageembedfooter.md" 
+content-ref url="messageembedfooter.md"
 [messageembedfooter.md](messageembedfooter.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messageembedimage.md" 
+content-ref url="messageembedimage.md"
 [messageembedimage.md](messageembedimage.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messageoptions.md" 
+content-ref url="messageoptions.md"
 [messageoptions.md](messageoptions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="replyoptions.md" 
+content-ref url="replyoptions.md"
 [replyoptions.md](replyoptions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="role.md" 
+content-ref url="role.md"
 [role.md](role.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="selectmenucomponent.md" 
+content-ref url="selectmenucomponent.md"
 [selectmenucomponent.md](selectmenucomponent.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="selectmenucomponentoption.md" 
+content-ref url="selectmenucomponentoption.md"
 [selectmenucomponentoption.md](selectmenucomponentoption.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="showmodaloptions.md" 
+content-ref url="showmodaloptions.md"
 [showmodaloptions.md](showmodaloptions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="textinputcomponent.md" 
+content-ref url="textinputcomponent.md"
 [textinputcomponent.md](textinputcomponent.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="thread.md" 
+content-ref url="thread.md"
 [thread.md](thread.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="user.md" 
+content-ref url="user.md"
 [user.md](user.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="useractivity.md" 
+content-ref url="useractivity.md"
 [useractivity.md](useractivity.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="userlevel.md" 
+content-ref url="userlevel.md"
 [userlevel.md](userlevel.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="voicestate.md" 
+content-ref url="voicestate.md"
 [voicestate.md](voicestate.md)
- endcontent-ref 
+endcontent-ref

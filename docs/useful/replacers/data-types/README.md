@@ -14,42 +14,42 @@ layout:
 
 # Типы данных
 
- content-ref url="channel.md" 
+content-ref url="channel.md"
 [channel.md](channel.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="guild.md" 
+content-ref url="guild.md"
 [guild.md](guild.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="guildowner.md" 
+content-ref url="guildowner.md"
 [guildowner.md](guildowner.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="member.md" 
+content-ref url="member.md"
 [member.md](member.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="memberlevel.md" 
+content-ref url="memberlevel.md"
 [memberlevel.md](memberlevel.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="membervoice.md" 
+content-ref url="membervoice.md"
 [membervoice.md](membervoice.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="message.md" 
+content-ref url="message.md"
 [message.md](message.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="messagementions.md" 
+content-ref url="messagementions.md"
 [messagementions.md](messagementions.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="role.md" 
+content-ref url="role.md"
 [role.md](role.md)
- endcontent-ref 
+endcontent-ref
 
- content-ref url="subs.md" 
+content-ref url="subs.md"
 [subs.md](subs.md)
- endcontent-ref 
+endcontent-ref

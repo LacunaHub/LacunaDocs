@@ -19,20 +19,44 @@ layout:
 Пример ниже объявляет переменную `reason` и присваивает ей [значение аргумента](data-types/#commandoption) **причина**. Если значение аргумента не указано, то вернёт `undefined`.
 
 ```javascript
-{{ let reason = command.options.find(i => i.name === 'причина') }}
+{
+  {
+    let reason = command.options.find(i => i.name === 'причина')
+  }
+}
 
 // теперь можно использовать эту переменную где угодно
-{{ reason.name }} // название аргумента
-{{ reason.value }} // значение аргумента
+{
+  {
+    reason.name
+  }
+} // название аргумента
+{
+  {
+    reason.value
+  }
+} // значение аргумента
 ```
 
 Мы также можем получить объект [`user`](data-types/#user), если установленный тип аргумента **ПОЛЬЗОВАТЕЛЬ**.
 
 ```javascript
-{{ let user = command.options.find(i => i.name === 'пользователь') }}
+{
+  {
+    let user = command.options.find(i => i.name === 'пользователь')
+  }
+}
 
-{{ user.user.username }} // имя пользователя
-{{ user.value }} // идентификатор пользователя
+{
+  {
+    user.user.username
+  }
+} // имя пользователя
+{
+  {
+    user.value
+  }
+} // идентификатор пользователя
 ```
 
 Обратите внимание, что в примере идёт обращение к свойству `user`, а не к `value`. Свойство `value` в данном случае будет иметь значение идентификатора упомянутого пользователя.
@@ -48,20 +72,32 @@ layout:
 ```javascript
 // объявляем переменную и присваеваем
 // ей значение текущей временной метки
-{{ const now = Date.now() }}
+{
+  {
+    const now = Date.now()
+  }
+}
 // ИЛИ
-{{ const now = new Date().getTime() }}
+{
+  {
+    const now = new Date().getTime()
+  }
+}
 
 // сохраняем значение переменной 'now' в хранилище
-{{
-setValue(`${command.id}.${member.user.id}.lastUse`, now)
-}}
+{
+  {
+    setValue(`${command.id}.${member.user.id}.lastUse`, now)
+  }
+}
 
 // получаем сохраненные данные
 // если ключа не существует, то вернёт undefined
-{{
-const lastUse = getValue(`${command.id}.${member.user.id}.lastUse`)
-}}
+{
+  {
+    const lastUse = getValue(`${command.id}.${member.user.id}.lastUse`)
+  }
+}
 ```
 
 В примере выше мы использовали [шаблонные строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Template_literals) для ключей хранилища. Рекомендуется указывать уникальный ключ для разных значений, в противном случае данные будут перезаписаны. В примере выше в ключе значения присутствует идентификатор пользователя. Если команду использует другой пользователь, то для него будут другие данные в хранилище.
@@ -73,18 +109,24 @@ const lastUse = getValue(`${command.id}.${member.user.id}.lastUse`)
 ```javascript
 // создаём функцию 'choose' с помощью
 // ключевого слова 'function'
-{{
-function choose(...args) {
-  // случайное число от 0 до количества введенных аргументов
-  const randomNum = Math.floor(Math.random() * args.length)
-  // возвращаем значение через ключевое слово 'return'
-  return args[randomNum]
+{
+  {
+    function choose(...args) {
+      // случайное число от 0 до количества введенных аргументов
+      const randomNum = Math.floor(Math.random() * args.length)
+      // возвращаем значение через ключевое слово 'return'
+      return args[randomNum]
+    }
+  }
 }
-}}
 
 // вызываем её и передаём аргументы через запятую
 // функция вернёт случайный введенный в неё аргумент
-{{ choose('какое-нибудь', 'случайное', 'значение') }}
+{
+  {
+    choose('какое-нибудь', 'случайное', 'значение')
+  }
+}
 ```
 
 ## Проверка разрешений
@@ -96,7 +138,11 @@ function choose(...args) {
 ```javascript
 // здесь мы проверяем есть ли право
 // администратора у текущего пользователя
-{{ member.permissions.includes('ADMINISTRATOR') }}
+{
+  {
+    member.permissions.includes('ADMINISTRATOR')
+  }
+}
 
 // вернёт true, если есть право администратора и false, если права нет
 ```
@@ -109,23 +155,26 @@ function choose(...args) {
 
 ## Проверка наличия роли
 
-:::info 
+:::info
 Проверку наличия роли можно выполнить только для автора команды, т.е. участника, вызвавшего её.
-::: 
+:::
 
 Проверка наличия определённой роли у участника в пользовательских командах делается аналогично вышеописанной проверке разрешений, однако в данном случае меняется содержимое поля **Левая часть**.
 
 ```javascript
 // здесь мы проверяем наличие конкретной роли
 // у пользователя, вызвавшего команду
-{{ member.roles.map((role) => role.id).includes("ROLE_ID") }}
+{
+  {
+    member.roles.map(role => role.id).includes('ROLE_ID')
+  }
+}
 
 // вместо ROLE_ID должен быть указан ID роли на сервере
 ```
 
-:::warning 
+:::warning
 В кавычках вместо `ROLE_ID` необходимо указать ID роли, наличие которой вы хотите проверить.
- 
 
 ## Выдача валюты
 
@@ -138,13 +187,19 @@ function choose(...args) {
 Валюты сервера можно получить обратившись к свойству `guild.economyCurrencies`, например:
 
 ```javascript
-{{
-const defaultCurrency = guild.economyCurrencies.find(i => i.id === 'DEFAULT')
-}}
+{
+  {
+    const defaultCurrency = guild.economyCurrencies.find(i => i.id === 'DEFAULT')
+  }
+}
 
-{{ defaultCurrency }} // { id: 'DEFAULT', name: 'Cash', symbol: '$' }
+{
+  {
+    defaultCurrency
+  }
+} // { id: 'DEFAULT', name: 'Cash', symbol: '$' }
 ```
 
-:::info 
+:::info
 Действие **Изменить кошелёк** не будет выполнено, если экономика отключена на сервере.
 :::

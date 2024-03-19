@@ -4,8 +4,8 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer'
+import type { Config } from '@docusaurus/types'
 
 export default {
   title: 'Lacuna Docs',
@@ -27,55 +27,54 @@ export default {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru'],
+    locales: ['ru']
   },
 
   presets: [
     [
       '@docusaurus/preset-classic',
-      ({
+      {
         docs: {
           path: 'docs',
           routeBasePath: '/',
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars.js'
         },
         theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],
+          customCss: './src/css/custom.css'
+        }
+      }
+    ]
   ],
 
-  themeConfig:
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Lacuna',
-        logo: {
-          alt: 'Lacuna avatar',
-          src: 'img/favicon-128x128.png',
+  themeConfig: {
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: 'Lacuna',
+      logo: {
+        alt: 'Lacuna avatar',
+        src: 'img/favicon-128x128.png'
+      },
+      items: [
+        {
+          href: 'https://lacunabot.com',
+          label: 'Website',
+          position: 'right'
         },
-        items: [
-          {
-            href: 'https://lacunabot.com',
-            label: 'Website',
-            position: 'right',
-          },
-          {
-            href: 'https://discord.gg/lacunabot',
-            label: 'Discord',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Xelitte`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        {
+          href: 'https://discord.gg/lacunabot',
+          label: 'Discord',
+          position: 'right'
+        }
+      ]
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Xelitte`
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula
+    }
+  }
 } satisfies Config

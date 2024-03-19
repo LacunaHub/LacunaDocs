@@ -16,7 +16,7 @@ layout:
 
 Пользовательские команды позволяют создавать собственные команды. Их функционал во многом зависит от фрагментов кода, которые используют чистый JavaScript. Если вы уже работали с каким-нибудь языком программирования или напрямую сталкивались с JS, то вам будет легче понять работу фрагментов кода.
 
-* [Имена команд, опций, вариантов выбора](https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-naming)
+- [Имена команд, опций, вариантов выбора](https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-naming)
 
 ## Компоненты <a href="#components" id="components"></a>
 
@@ -34,9 +34,8 @@ layout:
 
 <table><thead><tr><th>Компонент</th><th>Тип</th><th data-type="number">Максимальное количество</th></tr></thead><tbody><tr><td>Проверка значений</td><td>Условие</td><td>5</td></tr><tr><td>Ответить</td><td>Действие</td><td>1</td></tr><tr><td>Отправить сообщение</td><td>Действие</td><td>2</td></tr><tr><td>Изменить роли</td><td>Действие</td><td>2</td></tr><tr><td>Перенаправить на команду</td><td>Действие</td><td>1</td></tr><tr><td>Изменить кошелёк</td><td>Действие</td><td>2</td></tr><tr><td>Выполнить код</td><td>Действие</td><td>1</td></tr><tr><td>Открыть модальное окно</td><td>Действие</td><td>1</td></tr><tr><td>Переопределить права канала</td><td>Действие</td><td>1</td></tr></tbody></table>
 
-:::info 
+:::info
 Действие "Выполнить код" не позволяет добавлять другие типы компонентов. При добавлении данного действия все остальные будут удалены. Также действие "Выполнить код" ограничено 4000 символов.
- 
 
 ## Фрагменты кода <a href="#code-snippets" id="code-snippets"></a>
 
