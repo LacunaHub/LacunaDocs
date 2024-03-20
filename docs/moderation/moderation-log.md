@@ -27,4 +27,7 @@ description: Журнал модерации – это канал в котор
 <table><thead><tr><th>Аргумент</th><th data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>случай</code></td><td>true</td><td>Номер случая в журнале</td></tr><tr><td><code>причина</code></td><td>true</td><td>Причина для случая в журнале</td></tr></tbody></table>
 
 :::info
+
 **Помните!** Вы можете изменить только последние 50 случаев в журнале.
+
+:::
