@@ -10,7 +10,7 @@ description: >-
 
 Настройка и управление происходит в панели управления на вкладке **Социальные оповещения**.
 
-<img src="../../static/.gitbook/assets/dashboard-social-alerts-tab.png" alt="Вкладка социальных оповещений"></img>
+<img src="../../static/img/dashboard-social-alerts-tab.png" alt="Вкладка социальных оповещений"></img>
 
 :::info
 
@@ -31,7 +31,7 @@ description: >-
 
 После добавления бота в Telegram нажмите на **+** в панели управления.
 
-<img src="../../static/.gitbook/assets/dashboard-add-telegram-window.png" alt="Окно добавления канала"></img>
+<img src="../../static/img/dashboard-add-telegram-window.png" alt="Окно добавления канала"></img>
 
 В "Название канала" вам нужно ввести имя выбранного канала, т.е. то, что идёт после `t.me/` в его ссылке. В нашем примере ссылка на канал - `https://t.me/voidlacunatest1`, значит, именем канала будет `voidlacunatest1`.
 
@@ -39,9 +39,9 @@ description: >-
 
 После завершения настройки нажмите кнопку Добавить. Подписка появится в панели управления, а на сервере в выбранном канале Лакуна создаст вебхук. Теперь вы можете написать что-либо в Telegram канал, и Лакуна отправит это сообщение в Discord:
 
-<img src="../../static/.gitbook/assets/telegram-msg-in-telegram.png" alt="Сообщение в Telegram-канале"></img>
+<img src="../../static/img/telegram-msg-in-telegram.png" alt="Сообщение в Telegram-канале"></img>
 
-<img src="../../static/.gitbook/assets/telegram-msg-in-discord.png" alt="Это же сообщение в Discord"></img>
+<img src="../../static/img/telegram-msg-in-discord.png" alt="Это же сообщение в Discord"></img>
 
 :::danger
 
@@ -58,17 +58,17 @@ description: >-
 
 Для начала откройте окно добавления Twitch-канала в панели управления. Затем откройте нужный канал на Twitch и скопируйте его имя.
 
-![Имя пользователя на Twitch](../../static/.gitbook/assets/twitch-copy-channel-link.png)
+![Имя пользователя на Twitch](../../static/img/twitch-copy-channel-link.png)
 
 Вставьте скопированное имя пользователя в поле "Название канала" **и выберите необходимый канал из списка**:
 
-<img src="../../static/.gitbook/assets/twitch-select-channel.png" alt="Выбор необходимого пользователя"></img>
+<img src="../../static/img/twitch-select-channel.png" alt="Выбор необходимого пользователя"></img>
 
 В поле "Канал для оповещений" укажите канал, в который будут поступать уведомления о начале прямой трансляции.
 
 Затем, если необходимо, отметьте галочкой поле "Показывать предпросмотр стрима". Если данная опция включена, то Лакуна будет добавлять предпросмотр трансляции к каждому уведомлению:
 
-<img src="../../static/.gitbook/assets/twitch-stream-preview.png" alt="Предпросмотр стрима"></img>
+<img src="../../static/img/twitch-stream-preview.png" alt="Предпросмотр стрима"></img>
 
 В "Текст оповещения" указывается сообщение, которое отправляет бот в заданный канал. Оно может включать [заменители категории "Подписки"](../useful/replacers/#subscriptions).
 
