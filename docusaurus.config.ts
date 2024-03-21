@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 export default {
   title: 'Lacuna Docs',
   tagline: 'Здесь вы сможете найти для себя много полезной информации по работе с ботом Lacuna.',
-  favicon: 'img/favicon-128x128.png',
+  favicon: 'favicon-128x128.png',
 
   // Set the production url of your site here
   url: 'https://docs.lacunabot.com',
@@ -50,7 +50,7 @@ export default {
       title: 'Lacuna',
       logo: {
         alt: 'Lacuna avatar',
-        src: 'img/favicon-128x128.png'
+        src: 'favicon-128x128.png'
       },
       items: [
         {
