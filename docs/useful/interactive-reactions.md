@@ -4,7 +4,7 @@ description: Элементы реакций позволяют добавлят
 
 # Интерактивные реакции
 
-![Демонстрация](../../static/img/Discord_TO0BtFSL7V.gif)
+![Демонстрация](../../static/img/interactive-reactions-demo.gif)
 
 ## Создание элемента реакции <a href="#create-reaction-element" id="create-reaction-element"></a>
 
