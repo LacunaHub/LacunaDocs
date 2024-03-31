@@ -33,6 +33,7 @@ export default {
           path: 'docs',
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/LacunaHub/LacunaDocs/tree/master/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true
         },
