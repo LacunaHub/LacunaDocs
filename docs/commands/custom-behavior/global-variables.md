@@ -1,51 +1,29 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: Глобальные переменные
 ---
 
-# Глобальные переменные
+Перечень глобальных переменных, доступных к использованию.
 
-## channel
+## `channel`: _[Channel](data-types/channel.md)_
 
-Канал события
+Канал, в котором произошло событие.
 
-[Channel](data-types/channel.md)
-
-## guild
+## `guild`: _[Guild](data-types/guild.md)_
 
 Объект сервера.
 
-[Guild](data-types/guild.md)
-
-## member
+## `member`: _[Member](data-types/member.md)_
 
 Участник, который инициировал событие.
 
-[Member](data-types/member.md)
-
-## interaction
+## `interaction`: _[Interaction](data-types/interaction.md)_
 
 Объект взаимодействия. Доступно только в автоматизации для триггеров `INTERACTION_BUTTON`, `INTERACTION_SELECT_MENU` и `INTERACTION_MODAL_SUBMIT`.
 
-Interaction
-
-## message
+## `message`: _[Message](data-types/message.md)_
 
 Объект сообщения. Доступно только в автоматизации для триггеров `MESSAGE_CREATE`, `MESSAGE_DELETE` и `MESSAGE_UPDATE`.
 
-Message
-
-## voiceState
+## `voiceState`: _[VoiceState](data-types/voicestate.md)_
 
 Объект голосового состояния. Доступно только в автоматизации для триггеров `VOICE_CONNECT` и `VOICE_DISCONNECT`.
-
-VoiceState
