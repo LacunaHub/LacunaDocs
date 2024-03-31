@@ -68,6 +68,11 @@ export default {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true
     }
   }
 } satisfies Config
