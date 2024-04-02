@@ -1,8 +1,6 @@
 # LacunaDocs
 
-This is the (possible) next version of the Lacuna documentation site. In the current state, pages taken from the current version have been edited minimally so that there are no formatting errors, and everything else is left untouched. Most places use the standard Docusaurus configuration.
-
-_Work in progress._
+This is the (possible) next version of the Lacuna documentation site. Work in progress.
 
 ## Run it locally
 
