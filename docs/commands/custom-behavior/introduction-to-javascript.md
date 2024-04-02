@@ -1,18 +1,7 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: Знакомство с JavaScript
+description: Основы языка JavaScript, которые понадобятся вам для работы с "Пользовательским поведением"
 ---
-
-# Знакомство с JavaScript
 
 - [Введение](https://learn.javascript.ru/getting-started)
 - [Основы JavaScript](https://learn.javascript.ru/first-steps)

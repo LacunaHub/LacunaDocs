@@ -1,7 +1,7 @@
 ---
 title: Временные метки
-author: Aleх#0001
 description: Данное руководство поможет получить временную метку какого-либо события
+last_update: { author: 'Aleх#0001' }
 ---
 
 Как вы знаете, заменители `created_at` участника сервера, сообщения, гильдии и `joined_at` участника сервера возвращают время в миллисекундах от 1 января 1970 года — Unix-время. Конвертировать эти числа в понятную для человека дату можно двумя способами: используя [временные метки Discord `<t:Unix-время>`](https://discord.com/developers/docs/reference#message-formatting-timestamp-styles) или [функцию-заменитель `DATE`](https://docs.lacunabot.com/useful/replacers/functions#date).

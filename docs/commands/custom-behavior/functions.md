@@ -1,18 +1,7 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: Функции
+description: Функции, доступные для выполнения в фрагментах кода и действии "Выполнить код"
 ---
-
-# Функции
 
 ## setValue(key, value) <a href="#setvalue" id="setvalue"></a>
 

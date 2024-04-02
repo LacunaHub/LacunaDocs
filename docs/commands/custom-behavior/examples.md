@@ -1,18 +1,7 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: Примеры
+description: Примеры использования фрагментов кода
 ---
-
-# Примеры
 
 ## Аргументы команды <a href="#command-arguments" id="command-arguments"></a>
 
