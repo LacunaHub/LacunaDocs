@@ -6,6 +6,8 @@
 
 import type { Config } from '@docusaurus/types'
 import { themes as prismThemes } from 'prism-react-renderer'
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
 
 export default {
   title: 'Lacuna Docs',
@@ -31,6 +33,8 @@ export default {
       {
         docs: {
           path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/LacunaHub/LacunaDocs/tree/master/',
@@ -42,6 +46,15 @@ export default {
         }
       }
     ]
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous'
+    }
   ],
 
   themeConfig: {
