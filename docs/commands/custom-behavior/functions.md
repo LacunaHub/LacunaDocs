@@ -3,7 +3,7 @@ title: Функции
 description: Функции, доступные для выполнения в фрагментах кода и действии "Выполнить код"
 ---
 
-## `setValue(key, value)`: _void_ {#setvalue}
+### `setValue(key, value)`: _void_ {#setvalue}
 
 Устанавливает данные на основе ключа. Если ключа не существует, то он будет создан, в ином случае перезапишет данные ключа.
 
@@ -18,7 +18,7 @@ description: Функции, доступные для выполнения в �
 {{ setValue('data', { balance: 500, name: 'Hello World!' }) }}
 ```
 
-## `getValue(key)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any>_ {#getvalue}
+### `getValue(key)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any>_ {#getvalue}
 
 Возвращает данные на основе указанного ключа.
 
@@ -34,7 +34,7 @@ description: Функции, доступные для выполнения в �
 {{ getValue('data').then(value => { /* do something */ }) }}
 ```
 
-## `deleteValue(key)`: _void_ {#deletevalue}
+### `deleteValue(key)`: _void_ {#deletevalue}
 
 Удаляет данные на основе указанного ключа.
 
@@ -49,7 +49,7 @@ description: Функции, доступные для выполнения в �
 {{ deleteValue('data') }}
 ```
 
-## `createChannel(options)`: _Promise\<[Channel](data-types/channel.md)>_ {#createchannel}
+### `createChannel(options)`: _Promise\<[Channel](data-types/channel.md)>_ {#createchannel}
 
 Создает новый канал на сервере.
 
@@ -63,7 +63,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `createThread(channelId, options)`: _Promise\<[Thread](data-types/thread.md)>_ {#createthread}
+### `createThread(channelId, options)`: _Promise\<[Thread](data-types/thread.md)>_ {#createthread}
 
 Создает новую ветку в канале.
 
@@ -78,7 +78,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `deferReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deferreply}
+### `deferReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deferreply}
 
 Откладывает ответ на команду.
 
@@ -92,7 +92,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `deferUpdate()`: _Promise\<void>_ {#deferupdate}
+### `deferUpdate()`: _Promise\<void>_ {#deferupdate}
 
 Откладывает обновление сообщения, к которому был привязан компонент.
 
@@ -102,7 +102,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `deleteChannel(channelId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletechannel}
+### `deleteChannel(channelId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletechannel}
 
 Удаляет канал или ветку.
 
@@ -116,7 +116,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `deleteMessage(channelId, messageId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletemessage}
+### `deleteMessage(channelId, messageId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletemessage}
 
 Удаляет сообщение.
 
@@ -131,7 +131,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `deleteReply()`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletereply}
+### `deleteReply()`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletereply}
 
 Удаляет ответ на команду.
 
@@ -141,7 +141,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `editReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#editreply}
+### `editReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#editreply}
 
 Редактирует ответ на команду.
 
@@ -155,7 +155,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `followUpReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#followupreply}
+### `followUpReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#followupreply}
 
 Отправляет последующий ответ на команду.
 
@@ -169,7 +169,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `getUserActivity(userId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[UserActivity](data-types/useractivity.md)>_ {#getuseractivity}
+### `getUserActivity(userId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[UserActivity](data-types/useractivity.md)>_ {#getuseractivity}
 
 Получает активность пользователя.
 
@@ -183,7 +183,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `reply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#reply}
+### `reply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#reply}
 
 Отправляет ответ на команду.
 
@@ -197,7 +197,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `showModal(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#showmodal}
+### `showModal(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#showmodal}
 
 Отображает модальный компонент
 
@@ -211,7 +211,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `modifyUserRoles(userId, roles, mode)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#modifyuserroles}
+### `modifyUserRoles(userId, roles, mode)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#modifyuserroles}
 
 Редактирует роли пользователя.
 
@@ -227,7 +227,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `modifyUserWallet(userId, amount, currencyId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#modifyuserwallet}
+### `modifyUserWallet(userId, amount, currencyId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#modifyuserwallet}
 
 Добавляет/отнимает валюту у пользователя.
 
@@ -243,7 +243,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `sendMessage(channelId, options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Message](data-types/message.md)>_ {#sendmessage}
+### `sendMessage(channelId, options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Message](data-types/message.md)>_ {#sendmessage}
 
 Отправляет сообщение в указанный канал.
 
@@ -258,7 +258,7 @@ description: Функции, доступные для выполнения в �
 
 :::
 
-## `overwriteChannelPermissions(channelIds, permissions, userOrRole)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#overwritechannelpermissions}
+### `overwriteChannelPermissions(channelIds, permissions, userOrRole)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#overwritechannelpermissions}
 
 Переопределяет права выбранного канала для выбранного пользователя или роли.
 
