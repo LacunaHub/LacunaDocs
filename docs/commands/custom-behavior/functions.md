@@ -3,11 +3,15 @@ title: Функции
 description: Функции, доступные для выполнения в фрагментах кода и действии "Выполнить код"
 ---
 
-## setValue(key, value) <a href="#setvalue" id="setvalue"></a>
+## `setValue(key, value)`: _void_ {#setvalue}
 
 Устанавливает данные на основе ключа. Если ключа не существует, то он будет создан, в ином случае перезапишет данные ключа.
 
-<table><thead><tr><th width="193.7142857142857">Параметр</th><th width="150">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>key</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Ключ</td></tr><tr><td><code>value</code></td><td>any</td><td>true</td><td>Значение</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|key|string|true|Ключ|
+|value|any|true|Значение|
+
 
 ```javascript
 {{ setValue('data.balance', 500) }}
@@ -15,13 +19,13 @@ description: Функции, доступные для выполнения в �
 {{ setValue('data', { balance: 500, name: 'Hello World!' }) }}
 ```
 
-void
-
-## getValue(key) <a href="#getvalue" id="getvalue"></a>
+## `getValue(key)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any>_ {#getvalue}
 
 Возвращает данные на основе указанного ключа.
 
-<table><thead><tr><th width="193.7142857142857">Параметр</th><th width="150">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>key</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Ключ значения</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|key|string|true|Ключ значения|
 
 ```javascript
 {{ setValue('data', { balance: 500, name: 'Hello World!' }) }}
@@ -31,13 +35,13 @@ void
 {{ getValue('data').then(value => { /* do something */ }) }}
 ```
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any>
-
-## deleteValue(key) <a href="#deletevalue" id="deletevalue"></a>
+## `deleteValue(key)`: _void_ {#deletevalue}
 
 Удаляет данные на основе указанного ключа.
 
-<table><thead><tr><th width="193.7142857142857">Параметр</th><th width="150">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>key</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Ключ значения</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|key|string|true|Ключ значения|
 
 ```javascript
 {{ setValue('data', { balance: 500, name: 'Hello World!' }) }}
@@ -46,13 +50,13 @@ void
 {{ deleteValue('data') }}
 ```
 
-void
-
-## createChannel(options): _Promise\<_[_Channel_](data-types/#channel)_>_ <a href="#createchannel" id="createchannel"></a>
+## `createChannel(options)`: _Promise\<[Channel](data-types/channel.md)>_ {#createchannel}
 
 Создает новый канал на сервере.
 
-<table><thead><tr><th width="208">Параметр</th><th width="207">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types/createchanneloptions.md">CreateChannelOptions</a></td><td>true</td><td>Опции для канала</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|options|[CreateChannelOptions](data-types/createchanneloptions.md)|true|Опции для канала|
 
 :::info
 
@@ -60,13 +64,14 @@ void
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Channel](data-types/channel.md)>
-
-## createThread(channelId, options): _Promise\<_[_Thread_](data-types/#thread)_>_ <a href="#createthread" id="createthread"></a>
+## `createThread(channelId, options)`: _Promise\<[Thread](data-types/thread.md)>_ {#createthread}
 
 Создает новую ветку в канале.
 
-<table><thead><tr><th width="208">Параметр</th><th width="201">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, в котором будет создана ветка</td></tr><tr><td><code>options</code></td><td><a href="data-types/createthreadoptions.md">CreateThreadOptions</a></td><td>true</td><td>Опции для ветки</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|channelId|string|true|Идентификатор канала, в котором будет создана ветка|
+|options|[CreateThreadOptions](data-types/createchanneloptions.md)|true|Опции для ветки|
 
 :::info
 
@@ -74,23 +79,13 @@ void
 
 :::
 
-## deferReply(options) <a href="#deferreply" id="deferreply"></a>
+## `deferReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deferreply}
 
-Откладывает ответ на команду
+Откладывает ответ на команду.
 
-<table><thead><tr><th width="208">Параметр</th><th width="192">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types/deferreplyoptions.md">DeferReplyOptions</a></td><td>false</td><td>Опции для ответа</td></tr></tbody></table>
-
-:::info
-
-Данная функция доступна только для действия "Выполнить код".
-
-:::
-
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
-
-## deferUpdate() <a href="#deferupdate" id="deferupdate"></a>
-
-Откладывает обновление сообщения, к которому был привязан компонент
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|options|[DeferReplyOptions](data-types/deferreplyoptions.md)|false|Опции для ответа|
 
 :::info
 
@@ -98,13 +93,23 @@ void
 
 :::
 
-Promise\<void>
+## `deferUpdate()`: _Promise\<void>_ {#deferupdate}
 
-## deleteChannel(channelId) <a href="#deletechannel" id="deletechannel"></a>
+Откладывает обновление сообщения, к которому был привязан компонент.
+
+:::info
+
+Данная функция доступна только для действия "Выполнить код".
+
+:::
+
+## `deleteChannel(channelId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletechannel}
 
 Удаляет канал или ветку.
 
-<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, который нужно удалить</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|channelId|string|true|Идентификатор канала, который нужно удалить|
 
 :::info
 
@@ -112,13 +117,14 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
-
-## deleteMessage(channelId, messageId) <a href="#deletemessage" id="deletemessage"></a>
+## `deleteMessage(channelId, messageId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletemessage}
 
 Удаляет сообщение.
 
-<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, в который находится сообщение</td></tr><tr><td><code>messageId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор сообщение, которое нужно удалить</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|channelId|string|true|Идентификатор канала, в который находится сообщение|
+|messageId|string|true|Идентификатор сообщение, которое нужно удалить|
 
 :::info
 
@@ -126,11 +132,9 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `deleteReply()`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#deletereply}
 
-## deleteReply() <a href="#deletereply" id="deletereply"></a>
-
-Удаляет ответ на команду
+Удаляет ответ на команду.
 
 :::info
 
@@ -138,27 +142,13 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `editReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#editreply}
 
-## editReply(options) <a href="#editreply" id="editreply"></a>
+Редактирует ответ на команду.
 
-Редактирует ответ на команду
-
-<table><thead><tr><th>Параметр</th><th width="164">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types/messageoptions.md">MessageOptions</a></td><td>true</td><td>Опции для ответа</td></tr></tbody></table>
-
-:::info
-
-Данная функция доступна только для действия "Выполнить код".
-
-:::
-
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
-
-## followUpReply(options) <a href="#followupreply" id="followupreply"></a>
-
-Отправляет последующий ответ на команду
-
-<table><thead><tr><th>Параметр</th><th width="135">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types/replyoptions.md">ReplyOptions</a></td><td>true</td><td>Опции для ответа</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|options|[MessageOptions](data-types/messageoptions.md)|true|Опции для ответа|
 
 :::info
 
@@ -166,27 +156,13 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `followUpReply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#followupreply}
 
-## getUserActivity(userId) <a href="#getuseractivity" id="getuseractivity"></a>
+Отправляет последующий ответ на команду.
 
-Получает активность пользователя
-
-<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>userId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор пользователя</td></tr></tbody></table>
-
-:::info
-
-Данная функция доступна только для действия "Выполнить код".
-
-:::
-
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[UserActivity](data-types/useractivity.md)>
-
-## reply(options) <a href="#reply" id="reply"></a>
-
-Отправляет ответ на команду
-
-<table><thead><tr><th>Параметр</th><th width="135">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types/replyoptions.md">ReplyOptions</a></td><td>true</td><td>Опции для ответа</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|options|[ReplyOptions](data-types/replyoptions.md)|true|Опции для ответа|
 
 :::info
 
@@ -194,13 +170,41 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `getUserActivity(userId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[UserActivity](data-types/useractivity.md)>_ {#getuseractivity}
 
-## showModal(options) <a href="#showmodal" id="showmodal"></a>
+Получает активность пользователя.
+
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|userId|string|true|Идентификатор пользователя|
+
+:::info
+
+Данная функция доступна только для действия "Выполнить код".
+
+:::
+
+## `reply(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#reply}
+
+Отправляет ответ на команду.
+
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|options|[ReplyOptions](data-types/replyoptions.md)|true|Опции для ответа|
+
+:::info
+
+Данная функция доступна только для действия "Выполнить код".
+
+:::
+
+## `showModal(options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#showmodal}
 
 Отображает модальный компонент
 
-<table><thead><tr><th>Параметр</th><th width="181">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types/showmodaloptions.md">ShowModalOptions</a></td><td>true</td><td>Опции модального окна</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|options|[ShowModalOptions](data-types/showmodaloptions.md)|true|Опции модального окна|
 
 :::info
 
@@ -208,27 +212,15 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `modifyUserRoles(userId, roles, mode)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#modifyuserroles}
 
-## modifyUserRoles(userId, roles, mode) <a href="#modifyuserroles" id="modifyuserroles"></a>
+Редактирует роли пользователя.
 
-Редактирует роли пользователя
-
-<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>userId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор пользователя, которому будут изменены роли</td></tr><tr><td><code>roles</code></td><td>array of <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">strings</a></td><td>true</td><td>Роли, которые будут добавлены/убраны/установлены</td></tr><tr><td><code>mode</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>false</td><td>Режим функции. <code>add</code> - добавить, <code>remove</code> - убрать, <code>set</code> - установить. По умолчанию <code>add</code></td></tr></tbody></table>
-
-:::info
-
-Данная функция доступна только для действия "Выполнить код".
-
-:::
-
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
-
-## modifyUserWallet(userId, amount, currencyId) <a href="#modifyuserwallet" id="modifyuserwallet"></a>
-
-Добавляет/отнимает валюту у пользователя
-
-<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>userId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор пользователя, которому будет изменен кошелёк</td></tr><tr><td><code>amount</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></td><td>true</td><td>Количество валюты, которое будет добавлено или убрано. Негативное число отнимает валюту</td></tr><tr><td><code>currencyId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>false</td><td>Идентификатор валюты. По умолчанию <code>DEFAULT</code></td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|userId|string|true|Идентификатор пользователя, которому будут изменены роли|
+|roles|array of strings|true|Роли, которые будут добавлены/убраны/установлены|
+|mode|string|false|Режим функции. `add` - добавить, `remove` - убрать, `set` - установить. По умолчанию - `add`|
 
 :::info
 
@@ -236,27 +228,15 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `modifyUserWallet(userId, amount, currencyId)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#modifyuserwallet}
 
-## sendMessage(channelId, options) <a href="#sendmessage" id="sendmessage"></a>
+Добавляет/отнимает валюту у пользователя.
 
-Отправляет сообщение в указанный канал
-
-<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, в который будет отправлено сообщение</td></tr><tr><td><code>options</code></td><td><a href="data-types/messageoptions.md">MessageOptions</a></td><td>true</td><td>Опции для сообщения</td></tr></tbody></table>
-
-:::info
-
-Данная функция доступна только для действия "Выполнить код".
-
-:::
-
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Message](data-types/message.md)>
-
-## overwriteChannelPermissions(channelIds, permissions, userOrRole) <a href="#overwritechannelpermissions" id="overwritechannelpermissions"></a>
-
-Переопределяет права выбранного канала для выбранного пользователя или роли
-
-<table><thead><tr><th width="168">Параметр</th><th width="169">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelIds</code></td><td>array of <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификаторы каналов для которых будут переопределены права</td></tr><tr><td><code>permissions</code></td><td><a href="https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags">PermissionsFlags</a></td><td>true</td><td>Список прав, пример: `{VIEW_CHANNEL\: false}`</td></tr><tr><td><code>userOrRole</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор роли или пользователя</td></tr></tbody></table>
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|userId|string|true|Идентификатор пользователя, которому будет изменен кошелёк|
+|amount|number|true|Количество валюты, которое будет добавлено или убрано. Негативное число отнимает валюту|
+|currencyId|string|false|Идентификатор валюты. По умолчанию `DEFAULT`|
 
 :::info
 
@@ -264,4 +244,33 @@ Promise\<void>
 
 :::
 
-[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
+## `sendMessage(channelId, options)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Message](data-types/message.md)>_ {#sendmessage}
+
+Отправляет сообщение в указанный канал.
+
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|channelId|string|true|Идентификатор канала, в который будет отправлено сообщение|
+|options|[MessageOptions](data-types/messageoptions.md)|true|Опции для сообщения|
+
+:::info
+
+Данная функция доступна только для действия "Выполнить код".
+
+:::
+
+## `overwriteChannelPermissions(channelIds, permissions, userOrRole)`: _[Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>_ {#overwritechannelpermissions}
+
+Переопределяет права выбранного канала для выбранного пользователя или роли.
+
+|Параметр|Тип|Обязательный|Описание|
+|--- |--- |--- |--- |
+|channelIds|array of string|true|Идентификаторы каналов для которых будут переопределены права|
+|permissions|[PermissionsFlags](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags)|true|Список прав, пример: `{VIEW_CHANNEL\: false}`|
+|userOrRole|string|true|Идентификатор роли или пользователя|
+
+:::info
+
+Данная функция доступна только для действия "Выполнить код".
+
+:::
