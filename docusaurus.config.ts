@@ -39,7 +39,7 @@ export default {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/LacunaHub/LacunaDocs/tree/master/',
           showLastUpdateTime: true,
-          showLastUpdateAuthor: true
+          showLastUpdateAuthor: false
         },
         theme: {
           customCss: './src/css/custom.css'
