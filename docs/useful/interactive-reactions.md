@@ -5,7 +5,7 @@ description: Элементы реакций позволяют добавлят
 
 ![Демонстрация](../../static/img/interactive-reactions-demo.gif)
 
-## Создание элемента реакции <a href="#create-reaction-element" id="create-reaction-element"></a>
+## Создание элемента реакции {#create-reaction-element}
 
 Чтобы создать элемент реакции, вам понадобится включенный режим разработчика в настройках учетной записи Discord для получения идентификатора сообщения.
 

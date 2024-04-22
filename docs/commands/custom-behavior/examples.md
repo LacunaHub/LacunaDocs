@@ -3,7 +3,7 @@ title: Примеры
 description: Примеры использования фрагментов кода
 ---
 
-## Аргументы команды <a href="#command-arguments" id="command-arguments"></a>
+## Аргументы команды {#command-arguments}
 
 Пример ниже объявляет переменную `reason` и присваивает ей [значение аргумента](data-types/#commandoption) **причина**. Если значение аргумента не указано, то вернёт `undefined`.
 
@@ -28,7 +28,7 @@ description: Примеры использования фрагментов ко
 
 Со всеми свойствами объекта `command` можно ознакомиться [здесь](data-types/#command).
 
-## Хранение значений <a href="#values-storing" id="values-storing"></a>
+## Хранение значений {#values-storing}
 
 Мы можем хранить какие-нибудь значения для их дальнейшего использования с помощью функции [`setValue`](functions.md#setvalue) и [`getValue`](functions.md#getvalue).
 
