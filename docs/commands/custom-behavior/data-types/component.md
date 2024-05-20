@@ -1,18 +1,8 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: Component
 ---
 
-# Component
+Компонент взаимодействия пользовательского поведения - кнопка, выпадающее меню или поле ввода текста.
 
 ## .customId
 

@@ -1,22 +1,10 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: ReplyOptions
 ---
 
-# ReplyOptions
+Параметры ответа на сообщение. Наследование от [MessageOptions](messageoptions.md).
 
-наследование от [MessageOptions](messageoptions.md)
-
-## .ephemaral
+## .ephemeral
 
 Эфемерное сообщение.
 

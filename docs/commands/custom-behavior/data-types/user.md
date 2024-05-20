@@ -1,18 +1,10 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: User
 ---
 
-# User
+Объект пользователя Discord.
+
+Отличие этого типа от [Member](member.md) в том, что в последнем участник рассматривается в контексте сервера, а здесь - как не привязанный к конкретному серверу пользователь Discord.
 
 ## .avatar
 

@@ -1,18 +1,8 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: MessageEmbedAuthor
 ---
 
-# MessageEmbedAuthor
+Данные полей автора встроенного сообщения.
 
 ## .icon_url
 

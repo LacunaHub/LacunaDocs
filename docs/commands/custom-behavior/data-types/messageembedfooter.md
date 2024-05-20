@@ -1,18 +1,8 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: MessageEmbedAuthor
 ---
 
-# MessageEmbedFooter
+Данные футера ("подвала") встроенного сообщения.
 
 ## .icon_url
 

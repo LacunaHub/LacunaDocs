@@ -1,20 +1,8 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: SelectMenuComponent
 ---
 
-# SelectMenuComponent
-
-наследование от [Component](component.md)
+Компонент выпадающего списка. Наследование от [Component](component.md).
 
 ## .disabled
 

@@ -1,20 +1,8 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+title: TextInputComponent
 ---
 
-# TextInputComponent
-
-наследование от [Component](component.md)
+Поле ввода текста. Наследование от [Component](component.md)
 
 ## .label
 
