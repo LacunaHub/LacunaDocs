@@ -1,0 +1,101 @@
+---
+title: Member
+---
+
+import MdnRef from '@site/src/components/MdnRef';
+
+Объект участника сервера.
+
+## .avatar
+
+Ссылка на аватар участника.
+
+?<MdnRef dataType="String" />
+
+## .bot
+
+Является ли участник ботом.
+
+<MdnRef dataType="Boolean" />
+
+## .created_at
+
+Дата создания аккаунта участника.
+
+<MdnRef dataType="Number" />
+
+## .display_name
+
+Отображаемое имя участника.
+
+<MdnRef dataType="String" />
+
+## .id
+
+Идентификатор участника.
+
+<MdnRef dataType="String" />
+
+## .joined_at
+
+Дата присоединения к серверу.
+
+<MdnRef dataType="Number" />
+
+## .level
+
+Уровень участника.
+
+[MemberLevel](memberlevel.mdx)
+
+## .mention
+
+Упоминание участника.
+
+<MdnRef dataType="String" />
+
+## .nickname
+
+Никнейм участника.
+
+?<MdnRef dataType="String" />
+
+## .premium_since
+
+Дата начала подписки Discord Nitro.
+
+<MdnRef dataType="Number" />
+
+## .roles
+
+Роли участника
+
+```javascript
+// замените <role_id> на идентификатор нужной роли
+{ member.roles.<role_id>.name }
+```
+
+[Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)\<<MdnRef dataType="String" />, [Role](role.mdx)>
+
+## .username
+
+Имя пользователя участника.
+
+<MdnRef dataType="String" />
+
+## .voice
+
+Голосовой канал участника.
+
+?[MemberVoice](membervoice.mdx)
+
+## .wallet
+
+Кошелёк участника.
+
+```
+// замените <currency_id> на идентификатор нужной валюты
+{ member.wallet.<currency_id> }
+```
+
+[Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)\<<MdnRef dataType="String" />, <MdnRef dataType="Number" />>
