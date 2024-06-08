@@ -1,4 +1,8 @@
-# MemberLevel
+---
+title: MemberLevel
+---
+
+Уровень участника сервера.
 
 ## .current_xp
 

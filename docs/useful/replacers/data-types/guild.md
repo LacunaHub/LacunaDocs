@@ -1,4 +1,8 @@
-# Guild
+---
+title: Guild
+---
+
+Объект Discord-сервера.
 
 ## .afk_channel_id
 

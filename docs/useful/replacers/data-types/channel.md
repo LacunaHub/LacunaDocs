@@ -1,4 +1,8 @@
-# Channel
+---
+title: Channel
+---
+
+Канал на сервере в Discord.
 
 ## .id
 

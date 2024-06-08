@@ -1,4 +1,8 @@
-# Message
+---
+title: Message
+---
+
+Объект сообщения.
 
 ## .channel
 

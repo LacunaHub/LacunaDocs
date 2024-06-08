@@ -1,4 +1,8 @@
-# Member
+---
+title: Member
+---
+
+Объект участника сервера.
 
 ## .avatar
 

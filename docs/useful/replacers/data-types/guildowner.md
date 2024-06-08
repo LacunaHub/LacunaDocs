@@ -1,4 +1,8 @@
-# GuildOwner
+---
+title: GuildOwner
+---
+
+Владелец Discord-сервера.
 
 ## .avatar
 

@@ -1,10 +1,14 @@
-# MessageMentions
+---
+title: MessageMentions
+---
+
+Упоминания в сообщении.
 
 ## .channels
 
 Список упоминаний каналов.
 
-```
+```js
 // замените <index> на порядковый номер упоминания
 { message.mentions.channels.<index>.name }
 ```
@@ -15,7 +19,7 @@
 
 Список упоминаний участников.
 
-```
+```js
 // замените <index> на порядковый номер упоминания
 { message.mentions.members.<index>.display_name }
 ```
@@ -26,7 +30,7 @@
 
 Список упоминаний ролей.
 
-```
+```js
 // замените <index> на порядковый номер упоминания
 { message.mentions.roles.<index>.name }
 ```
