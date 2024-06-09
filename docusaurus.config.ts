@@ -59,7 +59,7 @@ export default {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/1920x1080.png',
     navbar: {
       title: 'Lacuna',
       logo: {
