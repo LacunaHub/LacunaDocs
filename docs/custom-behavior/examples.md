@@ -5,7 +5,7 @@ description: Примеры использования фрагментов ко
 
 ## Аргументы команды {#command-arguments}
 
-Пример ниже объявляет переменную `reason` и присваивает ей [значение аргумента](data-types/#commandoption) **причина**. Если значение аргумента не указано, то вернёт `undefined`.
+Пример ниже объявляет переменную `reason` и присваивает ей [значение аргумента](data-types/commandoption.mdx) **причина**. Если значение аргумента не указано, то вернёт `undefined`.
 
 ```javascript
 {{ let reason = command.options.find(i => i.name === 'причина') }}
@@ -15,7 +15,7 @@ description: Примеры использования фрагментов ко
 {{ reason.value }} // значение аргумента
 ```
 
-Мы также можем получить объект [`user`](data-types/#user), если установленный тип аргумента **ПОЛЬЗОВАТЕЛЬ**.
+Мы также можем получить объект [`user`](data-types/user.mdx), если установленный тип аргумента **ПОЛЬЗОВАТЕЛЬ**.
 
 ```javascript
 {{ let user = command.options.find(i => i.name === 'пользователь') }}
@@ -26,11 +26,11 @@ description: Примеры использования фрагментов ко
 
 Обратите внимание, что в примере идёт обращение к свойству `user`, а не к `value`. Свойство `value` в данном случае будет иметь значение идентификатора упомянутого пользователя.
 
-Со всеми свойствами объекта `command` можно ознакомиться [здесь](data-types/#command).
+Со всеми свойствами объекта `command` можно ознакомиться [здесь](data-types/command.mdx).
 
 ## Хранение значений {#values-storing}
 
-Мы можем хранить какие-нибудь значения для их дальнейшего использования с помощью функции [`setValue`](functions.md#setvalue) и [`getValue`](functions.md#getvalue).
+Мы можем хранить какие-нибудь значения для их дальнейшего использования с помощью функции [`setValue`](functions.mdx#setvalue) и [`getValue`](functions.md#getvalue).
 
 Например можно сохранить дату последнего использования команды:
 
@@ -80,7 +80,7 @@ function choose(...args) {
 
 Если вы хотите, чтобы в пользовательской команде была проверка на права, то вам нужно добавить условие **Сравнение значений** и выбрать оператор **РАВНО**.
 
-У объекта [`member`](data-types/#member) есть свойство `permissions` и оно является массивом [разрешений](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) участника.
+У объекта [`member`](data-types/member.mdx) есть свойство `permissions` и оно является массивом [разрешений](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) участника.
 
 ```javascript
 // здесь мы проверяем есть ли право
