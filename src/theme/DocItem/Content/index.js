@@ -30,7 +30,7 @@ export default function DocItemContent({ children }) {
       {syntheticData.title && (
         <header>
           <Heading as="h1">{syntheticData.title}</Heading>
-          <p>{syntheticData.description}</p>
+          <p><i>{syntheticData.description}</i></p>
         </header>
       )}
       <MDXContent>{children}</MDXContent>
