@@ -1,0 +1,54 @@
+---
+title: Member
+description: Объект участника сервера.
+---
+
+Отличие этого типа от [User](user.mdx) в том, что здесь участник рассматривается в контексте Discord-сервера, а не как независимый от конкретного сервера пользователь.
+
+## .avatar
+
+Ссылка на аватар участника.
+
+?<MdnRef dataType="String" />
+
+## .joinedTimestamp
+
+Дата присоединения к серверу.
+
+<MdnRef dataType="Number" />
+
+## .nickname
+
+Никнейм участника.
+
+?<MdnRef dataType="String" />
+
+## .pending
+
+Прошел ли участник отбор.
+
+<MdnRef dataType="Boolean" />
+
+## .permissions
+
+Разрешения участника.
+
+<MdnRef dataType="Array" />\<<MdnRef dataType="String" />>
+
+## .roles
+
+Роли участника.
+
+<MdnRef dataType="Array" />\<[Role](role.mdx)>
+
+## .user
+
+Информация о пользователе.
+
+[User](user.mdx)
+
+## .voice
+
+Голосовой канал участника.
+
+?[VoiceState](voicestate.mdx)

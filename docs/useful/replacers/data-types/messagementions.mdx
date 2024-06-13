@@ -1,0 +1,37 @@
+---
+title: MessageMentions
+description: Упоминания в сообщении.
+---
+
+## .channels
+
+Список упоминаний каналов.
+
+```js
+// замените <index> на порядковый номер упоминания
+{ message.mentions.channels.<index>.name }
+```
+
+[Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)\<<MdnRef dataType="String" />, [Channel](channel.mdx)>
+
+## .members
+
+Список упоминаний участников.
+
+```js
+// замените <index> на порядковый номер упоминания
+{ message.mentions.members.<index>.display_name }
+```
+
+[Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)\<<MdnRef dataType="String" />, [Partial](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)\<[Member](member.mdx)>>
+
+## .roles
+
+Список упоминаний ролей.
+
+```js
+// замените <index> на порядковый номер упоминания
+{ message.mentions.roles.<index>.name }
+```
+
+[Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)\<<MdnRef dataType="String" />, [Role](role.mdx)>

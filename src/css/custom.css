@@ -1,30 +1,39 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #b86eab;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --primary: #b86eab;
+  --secondary: #291c2b;
+  --accent: #00bcd4;
+
+  --ifm-color-success: #2fdf84;
+  --ifm-color-danger: #d67642;
+  --ifm-color-info: #31ccec;
+  --ifm-color-warning: #ffa726;
+
+  --dark-1: #0f0f12;
+  --dark-2: #16151a;
+  --dark-3: darken(--dark-2, 5.7%);
+
+  --almost-white-1: #f4f4f4;
+  --almost-white-2: darken(--almost-white-1, 10%);
+  --almost-white-3: darken(--almost-white-1, 25%);
+
+  --border-radius-sm: 2px;
+  --border-radius-md: --border-radius-sm * 2;
+  --border-radius-lg: --border-radius-md * 2;
+  --border-radius-xl: --border-radius-lg * 3;
+  --border-radius-max: 9999px;
+  --border-radius-circle: 50%;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Theme-related settings */
+
+[data-theme='light'] {
+  .navbar {
+    background-color: var(--almost-white-1);
+  }
+}
+
 [data-theme='dark'] {
-  --ifm-color-primary: #b86eab;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  .navbar {
+    background-color: var(--dark-1);
+  }
 }
