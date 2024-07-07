@@ -36,7 +36,7 @@ const sidebars = {
           dirName: 'custom-behavior'
         }
       ],
-      link: { type: 'doc', id: 'custom-behavior/README' },
+      link: { type: 'doc', id: 'custom-behavior/README' }
     },
     {
       type: 'category',

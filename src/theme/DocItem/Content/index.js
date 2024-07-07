@@ -1,9 +1,9 @@
-import { ThemeClassNames } from '@docusaurus/theme-common';
-import { useDoc } from '@docusaurus/theme-common/internal';
-import Heading from '@theme/Heading';
-import MDXContent from '@theme/MDXContent';
-import clsx from 'clsx';
-import React from 'react';
+import { ThemeClassNames } from '@docusaurus/theme-common'
+import { useDoc } from '@docusaurus/theme-common/internal'
+import Heading from '@theme/Heading'
+import MDXContent from '@theme/MDXContent'
+import clsx from 'clsx'
+import React from 'react'
 /**
  Title can be declared inside md content or declared through
  front matter and added manually. To make both cases consistent,
@@ -15,25 +15,26 @@ import React from 'react';
  - the markdown content does not already contain a top-level h1 heading
 */
 function useSyntheticData() {
-  const { metadata, frontMatter, contentTitle } = useDoc();
-  const shouldRender =
-    !frontMatter.hide_title && typeof contentTitle === 'undefined';
+  const { metadata, frontMatter, contentTitle } = useDoc()
+  const shouldRender = !frontMatter.hide_title && typeof contentTitle === 'undefined'
   if (!shouldRender) {
-    return null;
+    return null
   }
-  return metadata;
+  return metadata
 }
 export default function DocItemContent({ children }) {
-  const syntheticData = useSyntheticData();
+  const syntheticData = useSyntheticData()
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
       {syntheticData.title && (
         <header>
           <Heading as="h1">{syntheticData.title}</Heading>
-          <p><i>{syntheticData.description}</i></p>
+          <p>
+            <i>{syntheticData.description}</i>
+          </p>
         </header>
       )}
       <MDXContent>{children}</MDXContent>
     </div>
-  );
+  )
 }
