@@ -1,7 +1,7 @@
 :root {
-  --primary: #b86eab;
-  --secondary: #291c2b;
-  --accent: #00bcd4;
+  --ifm-color-primary: #b86eab;
+  --ifm-color-secondary: #291c2b;
+  --ifm-color-accent: #00bcd4;
 
   --ifm-color-success: #2fdf84;
   --ifm-color-danger: #d67642;
