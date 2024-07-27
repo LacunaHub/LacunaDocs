@@ -22,6 +22,8 @@
   --border-radius-xl: --border-radius-lg * 3;
   --border-radius-max: 9999px;
   --border-radius-circle: 50%;
+
+  line-height: 1.5;
 }
 
 /* Theme-related settings */
