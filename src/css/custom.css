@@ -27,12 +27,20 @@
 /* Theme-related settings */
 
 [data-theme='light'] {
+  .main-wrapper {
+    background-color: var(--almost-white-2);
+  }
+
   .navbar {
     background-color: var(--almost-white-1);
   }
 }
 
 [data-theme='dark'] {
+  .main-wrapper {
+    background-color: var(--dark-2);
+  }
+
   .navbar {
     background-color: var(--dark-1);
   }
