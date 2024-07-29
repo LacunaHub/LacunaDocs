@@ -1,12 +1,18 @@
 # LacunaDocs
 
-This is the (possible) next version of the Lacuna documentation site. Work in progress.
+Этот репозиторий содержит новую версию [сайта документации](https://docs.lacunabot.com) Lacuna, пришедшую на замену [старой версии](https://github.com/LacunaHub/Docs), которая использует GitBook.
 
-## Run it locally
+## Локальный запуск
 
-The steps are quite simple:
+Для того, чтобы локально запустить проект, необходимо иметь Node.js версии 18 или выше и пакетный менеджер NPM.
 
-1. Clone this repo
-2. Install npm dependencies in the cloned folder
-3. Run `npm run start` and wait for the browser window to open.
-   Should you make any changes while the process is running, the documentation will be rebuilt and the page will reload automatically.
+Следующие шаги довольно просты:
+
+1. Клонируйте этот репозиторий
+2. Установите зависимости NPM в директории с клоном репозитория
+3. Вызовите `npm run start` и дождитесь открытия окна браузера.
+   Если во время работы процесса вы внесете какие-либо изменения, документация будет пересобрана и страница автоматически перезагрузится.
+
+По умолчанию Docusaurus использует порт 3000, однако можно указать и другой при помощи флага `--port`. Подробнее о доступных опциях в [документации](https://docusaurus.io/docs/cli#options) Docusaurus.
+
+Для очистки кэша используйте `npm run clear`, для компиляции - `npm run build`. Полный список скриптов предоставлен в [`package.json`](./package.json).
