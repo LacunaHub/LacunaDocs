@@ -1,7 +1,11 @@
 {
-  "name": "lacuna-docusaurus",
-  "version": "0.0.0",
-  "private": true,
+  "name": "lacunadocs",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LacunaHub/LacunaDocs.git"
+  },
+  "author": "Lacuna (https://github.com/LacunaHub)",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
