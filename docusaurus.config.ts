@@ -69,12 +69,27 @@ export default {
       items: [
         {
           href: 'https://lacunabot.com',
-          label: 'Website',
+          className: 'header--link header--www-link',
           position: 'right'
         },
         {
           href: 'https://discord.gg/lacunabot',
-          label: 'Discord',
+          className: 'header--link header--discord-link',
+          position: 'right'
+        },
+        {
+          href: 'https://t.me/roviusistaken',
+          className: 'header--link header--telegram-link',
+          position: 'right'
+        },
+        {
+          href: 'https://github.com/LacunaHub',
+          className: 'header--link header--github-link',
+          position: 'right'
+        },
+        {
+          href: 'https://crowdin.com/project/lacuna',
+          className: 'header--link header--translate-link',
           position: 'right'
         }
       ]
