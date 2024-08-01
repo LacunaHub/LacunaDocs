@@ -26,6 +26,39 @@
   line-height: 1.5;
 }
 
+.navbar__item {
+  display: inline-block;
+}
+
+.navbar__item:hover {
+  color: var(--ifm-color-primary);
+}
+
+.navbar__title {
+  display: inline-block;
+}
+
+@media (max-width: 996px) {
+  .navbar-sidebar .navbar__title {
+    display: inline-block;
+    font-size: var(--ifm-font-size-base);
+  }
+
+  .navbar-sidebar .navbar__items {
+    display: none;
+  }
+
+  .navbar-sidebar__back {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar__title {
+    display: none;
+  }
+}
+
 .header--link {
   width: 32px;
   height: 32px;
