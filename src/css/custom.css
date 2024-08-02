@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 996px) {
+  .navbar__item {
+    display: inline-block;
+  }
+
   .navbar-sidebar .navbar__title {
     display: inline-block;
     font-size: var(--ifm-font-size-base);
