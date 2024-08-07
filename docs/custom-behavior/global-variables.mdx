@@ -1,0 +1,28 @@
+---
+title: Глобальные переменные
+description: Перечень глобальных переменных, доступных к использованию
+---
+
+### `channel`: _[Channel](data-types/channel.mdx)_ \{#channel}
+
+Канал, в котором произошло событие.
+
+### `guild`: _[Guild](data-types/guild.mdx)_ \{#guild}
+
+Объект сервера.
+
+### `member`: _[Member](data-types/member.mdx)_ \{#member}
+
+Участник, который инициировал событие.
+
+### `interaction`: _[Interaction](data-types/interaction.mdx)_ \{#interaction}
+
+Объект взаимодействия. Доступно только в автоматизации для триггеров `INTERACTION_BUTTON`, `INTERACTION_SELECT_MENU` и `INTERACTION_MODAL_SUBMIT`.
+
+### `message`: _[Message](data-types/message.mdx)_ \{#message}
+
+Объект сообщения. Доступно только в автоматизации для триггеров `MESSAGE_CREATE`, `MESSAGE_DELETE` и `MESSAGE_UPDATE`.
+
+### `voiceState`: _[VoiceState](data-types/voicestate.mdx)_ \{#voicestate}
+
+Объект голосового состояния. Доступно только в автоматизации для триггеров `VOICE_CONNECT` и `VOICE_DISCONNECT`.

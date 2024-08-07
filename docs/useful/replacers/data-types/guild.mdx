@@ -1,0 +1,141 @@
+---
+title: Guild
+description: Объект Discord-сервера. 
+---
+
+## .afk_channel_id
+
+Идентификатор голосового канала, в который перемещаются AFK участники.
+
+?<MdnRef dataType="String" />
+
+## .banner
+
+Ссылка на баннер сервера.
+
+?<MdnRef dataType="String" />
+
+## .boost_tier
+
+Уровень буста сервера.
+
+<MdnRef dataType="Number" />
+
+## .booster_count
+
+Количество бустеров на сервере.
+
+<MdnRef dataType="Number" />
+
+## .channels
+
+Список каналов на сервере.
+
+```javascript
+// замените <channel_id> на идентификатор нужного канала
+{ guild.channels.<channel_id>.name }
+```
+
+[Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)\<string, [Channel](channel.mdx)>
+
+## .created_at
+
+Дата создания сервера.
+
+<MdnRef dataType="Number" />
+
+## .description
+
+Описание сервера.
+
+?<MdnRef dataType="String" />
+
+## .discovery_splash
+
+Ссылка на заставку сервера в путешествии.
+
+?<MdnRef dataType="String" />
+
+## .icon
+
+Ссылка на иконку сервера.
+
+?<MdnRef dataType="String" />
+
+## .id
+
+Идентификатор сервера.
+
+<MdnRef dataType="String" />
+
+## .member_count
+
+Количество участников на сервере.
+
+<MdnRef dataType="Number" />
+
+## .name
+
+Название сервера.
+
+<MdnRef dataType="String" />
+
+## .name_acronym
+
+Акроним названия сервера.
+
+<MdnRef dataType="String" />
+
+## .owner
+
+Владелец сервера.
+
+[GuildOwner](guildowner.mdx)
+
+## .presence_count
+
+Количество участников на сервере, которые имеют статус в сети.
+
+<MdnRef dataType="Number" />
+
+## .public_updates_channel_id
+
+Идентификатор канала для публичных обновлений.
+
+?<MdnRef dataType="String" />
+
+## .rules_channel_id
+
+Идентификатор канала с правилами.
+
+?<MdnRef dataType="String" />
+
+## .safety_alerts_channel_id
+
+Идентификатор канала для уведомлений о безопасности.
+
+?<MdnRef dataType="String" />
+
+## .splash
+
+Ссылка на заставку для приглашений.
+
+?<MdnRef dataType="String" />
+
+## .system_channel_id
+
+Идентификатор системного канала.
+
+?<MdnRef dataType="String" />
+
+## .vanity_url
+
+Ссылка на пользовательское приглашение.
+
+?<MdnRef dataType="String" />
+
+## .voice_connection_count
+
+Количество участников на сервере, которые находятся в голосовом канале.
+
+<MdnRef dataType="Number" />

@@ -1,7 +1,11 @@
 {
-  "name": "lacuna-docusaurus",
-  "version": "0.0.0",
-  "private": true,
+  "name": "lacunadocs",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LacunaHub/LacunaDocs.git"
+  },
+  "author": "Lacuna (https://github.com/LacunaHub)",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -12,20 +16,24 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "upgrade": "npm i @docusaurus/core@latest @docusaurus/plugin-content-docs@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.1.1",
-    "@docusaurus/preset-classic": "^3.1.1",
+    "@docusaurus/core": "^3.4.0",
+    "@docusaurus/plugin-content-docs": "^3.4.0",
+    "@docusaurus/preset-classic": "^3.4.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^1.2.1",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.1.1",
-    "@docusaurus/types": "^3.1.1"
+    "@docusaurus/module-type-aliases": "^3.4.0",
+    "@docusaurus/types": "^3.4.0"
   },
   "browserslist": {
     "production": [

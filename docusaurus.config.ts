@@ -6,6 +6,8 @@
 
 import type { Config } from '@docusaurus/types'
 import { themes as prismThemes } from 'prism-react-renderer'
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
 
 export default {
   title: 'Lacuna Docs',
@@ -31,10 +33,13 @@ export default {
       {
         docs: {
           path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/LacunaHub/LacunaDocs/tree/master/',
           showLastUpdateTime: true,
-          showLastUpdateAuthor: true
+          showLastUpdateAuthor: false
         },
         theme: {
           customCss: './src/css/custom.css'
@@ -43,9 +48,18 @@ export default {
     ]
   ],
 
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous'
+    }
+  ],
+
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/1920x1080.png',
     navbar: {
       title: 'Lacuna',
       logo: {
@@ -55,12 +69,27 @@ export default {
       items: [
         {
           href: 'https://lacunabot.com',
-          label: 'Website',
+          className: 'header--link header--www-link',
           position: 'right'
         },
         {
           href: 'https://discord.gg/lacunabot',
-          label: 'Discord',
+          className: 'header--link header--discord-link',
+          position: 'right'
+        },
+        {
+          href: 'https://t.me/roviusistaken',
+          className: 'header--link header--telegram-link',
+          position: 'right'
+        },
+        {
+          href: 'https://github.com/LacunaHub',
+          className: 'header--link header--github-link',
+          position: 'right'
+        },
+        {
+          href: 'https://crowdin.com/project/lacuna',
+          className: 'header--link header--translate-link',
           position: 'right'
         }
       ]
@@ -68,6 +97,11 @@ export default {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true
     }
   }
 } satisfies Config
