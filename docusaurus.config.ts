@@ -105,6 +105,15 @@ export default {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: true
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: '6LHLO3D5N7',
+      // Public API key: it is safe to commit it
+      apiKey: '3c0e4bbdd726c12c03aacfb521fb1fe4',
+      indexName: 'lacunabot',
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search'
     }
   }
 } satisfies Config
