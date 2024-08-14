@@ -43,6 +43,9 @@ export default {
         },
         theme: {
           customCss: './src/css/custom.css'
+        },
+        gtag: {
+          trackingID: 'G-CXHSP7Z8VV'
         }
       }
     ]
