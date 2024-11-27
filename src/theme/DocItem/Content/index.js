@@ -1,5 +1,5 @@
+import { useDoc } from '@docusaurus/plugin-content-docs/client'
 import { ThemeClassNames } from '@docusaurus/theme-common'
-import { useDoc } from '@docusaurus/theme-common/internal'
 import Heading from '@theme/Heading'
 import MDXContent from '@theme/MDXContent'
 import clsx from 'clsx'
@@ -14,7 +14,7 @@ import React from 'react'
  - user doesn't ask to hide it with front matter
  - the markdown content does not already contain a top-level h1 heading
 */
-function useSyntheticData() {
+function useSyntheticTitle() {
   const { metadata, frontMatter, contentTitle } = useDoc()
   const shouldRender = !frontMatter.hide_title && typeof contentTitle === 'undefined'
   if (!shouldRender) {
@@ -23,7 +23,7 @@ function useSyntheticData() {
   return metadata
 }
 export default function DocItemContent({ children }) {
-  const syntheticData = useSyntheticData()
+  const syntheticData = useSyntheticTitle()
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
       {syntheticData.title && (
