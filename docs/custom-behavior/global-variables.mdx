@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 title: Глобальные переменные
 description: Перечень глобальных переменных, доступных к использованию
 ---
@@ -7,21 +8,25 @@ description: Перечень глобальных переменных, дос�
 
 Канал, в котором произошло событие.
 
+### `command`: _[Command](data-types/command.mdx)_ \{#command}
+
+Объект команды. Доступно только в пользовательских командах.
+
 ### `guild`: _[Guild](data-types/guild.mdx)_ \{#guild}
 
 Объект сервера.
-
-### `member`: _[Member](data-types/member.mdx)_ \{#member}
-
-Участник, который инициировал событие.
 
 ### `interaction`: _[Interaction](data-types/interaction.mdx)_ \{#interaction}
 
 Объект взаимодействия. Доступно только в автоматизации для триггеров `INTERACTION_BUTTON`, `INTERACTION_SELECT_MENU` и `INTERACTION_MODAL_SUBMIT`.
 
+### `member`: _[Member](data-types/member.mdx)_ \{#member}
+
+Участник, который инициировал событие.
+
 ### `message`: _[Message](data-types/message.mdx)_ \{#message}
 
-Объект сообщения. Доступно только в автоматизации для триггеров `MESSAGE_CREATE`, `MESSAGE_DELETE` и `MESSAGE_UPDATE`.
+Объект сообщения. Доступно только в автоматизации для триггеров `MESSAGE_CREATE`, `MESSAGE_DELETE`, `MESSAGE_REACTION_ADD`, `MESSAGE_REACTION_REMOVE` и `MESSAGE_UPDATE`.
 
 ### `voiceState`: _[VoiceState](data-types/voicestate.mdx)_ \{#voicestate}
 

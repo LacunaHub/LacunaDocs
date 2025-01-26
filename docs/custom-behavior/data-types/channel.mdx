@@ -25,7 +25,7 @@ description: Канал на сервере в Discord.
 
 Идентификатор последнего сообщения в канале.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .name
 
@@ -43,28 +43,28 @@ description: Канал на сервере в Discord.
 
 Идентификатор категории канала.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .position
 
 Позиция канала.
 
-<MdnRef dataType="Number" />
+?<MdnRef dataType="Number" />
 
 ## .rateLimitPerUser
 
 Медленный режим в секундах.
 
-<MdnRef dataType="Number" />
+<MdnRef dataType="Number" /> | <MdnRef dataType="null" />
 
 ## .topic
 
 Тема канала.
 
-?<MdnRef dataType="String" />
+?<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .type
 
 Тип канала.
 
-<MdnRef dataType="Number" />
+[ChannelType](channeltype.mdx)
