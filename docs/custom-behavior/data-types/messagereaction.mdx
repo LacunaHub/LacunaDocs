@@ -1,0 +1,22 @@
+---
+title: MessageReaction
+description: Объект реакции на сообщении.
+---
+
+## .emoji
+
+Эмодзи реакции. Для пользовательских эмодзи здесь будет что-то вроде `name:id` (для анимированных в начало добавляется `a:`: `a:name:id`). В остальных случаях здесь будет закодированная строка (<MdnRef dataType="encodeURIComponent" />).
+
+<MdnRef dataType="String" />
+
+## .count
+
+Количество пользователей, которые добавили реакцию.
+
+<MdnRef dataType="Number" />
+
+## .userId
+
+Существует только в контексте автоматизации (`MESSAGE_REACTION_ADD` и `MESSAGE_REACTION_REMOVE`) и необходим только для идентификации пользователя, который последний добавил или убрал реакцию.
+
+?<MdnRef dataType="String" />

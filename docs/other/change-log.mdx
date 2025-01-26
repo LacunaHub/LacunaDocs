@@ -3,6 +3,18 @@ title: Список изменений
 description: На этой странице предоставлен список изменений для каждой версии
 ---
 
+## 4.14
+
+26.01.2025
+
+- В пользовательских командах и автоматизациях по умолчанию теперь используются JS-скрипты вместо компонентов. Пожалуйста, ознакомьтесь с обновленной страницей [пользовательского поведения](../custom-behavior)
+  - Добавлен триггер `MESSAGE_REACTION_ADD` и `MESSAGE_REACTION_REMOVE` для автоматизаций
+  - Объект `guild` теперь содержит свойство [`preferredLocale`](../custom-behavior/data-types/guild#preferredlocale)
+  - Объект `message` теперь содержит свойство [`attachments`](../custom-behavior/data-types/message#attachments) и [`reactions`](../custom-behavior/data-types/message#reactions)
+  - Объект `user` теперь содержит свойство [`globalName`](../custom-behavior/data-types/user#globalname)
+  - Добавлена функция [`editMessage`](../custom-behavior/functions#editmessage)
+  - Теперь глобальные переменные, которых не существует в контексте текущей автоматизации или пользовательской команды, будут равняться `undefined`
+
 ## 4.13.1
 
 19.11.2024

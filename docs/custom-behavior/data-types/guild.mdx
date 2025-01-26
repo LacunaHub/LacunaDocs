@@ -7,19 +7,19 @@ description: Объект Discord-сервера.
 
 Идентификатор канала простоя.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .afkTimeout
 
 Тайм-аут простоя.
 
-?<MdnRef dataType="Number" />
+<MdnRef dataType="Number" />
 
 ## .banner
 
 Ссылка на баннер сервера.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .channels
 
@@ -43,19 +43,13 @@ description: Объект Discord-сервера.
 
 Описание сервера.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .discoverySplash
 
 Ссылка на заставку сервера в путешествии.
 
-?<MdnRef dataType="String" />
-
-## .economyCurrencies
-
-Валюты экономики.
-
-<MdnRef dataType="Array" />\<[Currency](currency.mdx)>
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .explicitContentFilter
 
@@ -67,13 +61,19 @@ description: Объект Discord-сервера.
 
 Ссылка на иконку сервера.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .id
 
 Идентификатор сервера.
 
 <MdnRef dataType="String" />
+
+## .mfaLevel
+
+Требуемый уровень многофакторной аутентификации.
+
+<MdnRef dataType="Number" />
 
 ## .name
 
@@ -87,9 +87,21 @@ description: Объект Discord-сервера.
 
 <MdnRef dataType="String" />
 
+## .nsfwLevel
+
+Уровень nsfw на сервере.
+
+<MdnRef dataType="Number" />
+
 ## .ownerId
 
 Идентификатор владельца сервера.
+
+<MdnRef dataType="String" />
+
+## .preferredLocale
+
+Предпочтительный язык на сервере.
 
 <MdnRef dataType="String" />
 
@@ -109,7 +121,7 @@ description: Объект Discord-сервера.
 
 Идентификатор канала для публичных обновлений.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .roles
 
@@ -121,31 +133,31 @@ description: Объект Discord-сервера.
 
 Идентификатор канала с правилами.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .safetyAlertsChannelId
 
 Идентификатор канала для уведомлений о безопасности.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .splash
 
 Ссылка на заставку для приглашений.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .systemChannelId
 
 Идентификатор системного канала.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .vanityURLCode
 
 Код пользовательского приглашения.
 
-?<MdnRef dataType="String" />
+<MdnRef dataType="String" /> | <MdnRef dataType="null" />
 
 ## .verificationLevel
 
