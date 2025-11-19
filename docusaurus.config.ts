@@ -21,10 +21,23 @@ export default {
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn'
+    }
+  },
   i18n: {
     defaultLocale: 'ru',
     locales: ['ru']
+  },
+
+  /**
+   * Preparing for Docusaurus v4
+   * https://docusaurus.io/blog/releases/3.8#future-flags
+   */
+  future: {
+    v4: true
   },
 
   presets: [
